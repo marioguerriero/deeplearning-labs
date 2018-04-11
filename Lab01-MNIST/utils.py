@@ -39,4 +39,10 @@ def plot_train_val(t, st, sv, metric):
     #curve_name=str(metric)+"LC.png"
     #plt.savefig(Figures/curve_name)
     plt.show()
-
+    
+def plot_training(t1, st1, sv1, metric1, t2, s2, metric2):
+    plt.figure(1)
+    plt.subplot(211)
+    plot_train_val(t1, st1, sv1, metric1)
+    plt.subplot(212)
+    plot_curve(t2, s2, metric2)
